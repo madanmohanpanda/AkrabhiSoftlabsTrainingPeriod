@@ -14,7 +14,7 @@ async function logMovies() {
     const responseJson = await response.json();
     
     let text = responseJson.delivery;
-    await dom(result, text);
+     dom(result, text);
     
   }
 
