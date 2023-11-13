@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* const url = " https://v2.jokeapi.dev/joke/Any?safe-mode";
+       /*  try {
+            function test() {
+                setTimeout((err) => {
+                    // throw new Error("madan");
+                }, 10000);
+                return err;
+            }
+            test();
+        } catch (error) {
+            console.log("err handled");
+        } */
+        /*
+        async function getM(){
+            let response = await fetch(url);
+            let res = await response.json();
+            console.log(response);
+            // location.href = response.url;
+        }
+        getM();
+        localStorage.one = 1;
+        console.log(localStorage.one+ 2); 
+        */
+
+        //classes
+       /*  class Animal{
+            name = "animal";
+            getName(){
+                console.log(this.name);
+            }
+        }
+
+        class Man extends Animal{
+            lastName  = "panda";
+        }
+
+        let animal = new Animal();
+        let men = new Man();
+        console.log(animal);
+        console.log(men); */
+/* 
+        let arr = [2,7,5];
+        let newArr = arr.map((val, index, arr)=>{
+            return val*3;
+        });
+        console.log(newArr)
+        let res = arr.some((el)=> el%2==0);
+        console.log(res); */
+
+        /* let myObj = {
+            name: "madan",
+            lname: "panda"
+        };
+        let newObj = {...myObj, lname:"mohan"};
+        console.log(newObj);
+        let arr = [2,4,5];
+        function myFunc(...arr){
+            console.log(arguments);
+        }
+        myFunc(...arr);
+ */
+/* 
+ let body = document.querySelector('body');
+
+ function changeClr(clr, delay, nextChange)
+ {
+    setTimeout(()=> {
+        body.style.backgroundColor = clr;
+    }, delay);
+    if(nextChange)
+    {
+        nextChange();
+    }
+ }
+const btn = document.createElement('button');
+btn.classList.add('btn')
+btn.textContent = "clicks";
+body.appendChild(btn)
+ changeClr('red',1000, changeClr('black', 2000));
+ body.addEventListener('click',()=> console.log("hello")); */
+let body = document.querySelector('body');
+ async function changeClr(clr, delay){
+    setTimeout(()=>{
+        body.style.backgroundColor = clr;
+    },delay);
+ }
+
+ async function test(){
+    await changeClr('red', 2000);
+    await changeClr('black',3000);
+ }
+ test();
+    </script>
+    
+</body>
+
+</html>
